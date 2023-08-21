@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My experiment</title>
+  <link href="https://unpkg.com/jspsych@7.3.3/css/jspsych.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/jspsych@7.3.3"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.2"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-preload@1.1.2"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-audio-button-response@1.1.2"></script>
+</head>
+
+<body></body>
+<script>
+
+  const jsPsych = initJsPsych()
+
+  const preload = {
+    type: jsPsychPreload,
+    audio: ['media/audio.mp3']
+  }
+
+  const sound_trial = {
+    type: jsPsychAudioButtonResponse,
+    stimulus: 'media/audio.mp3',
+    choices: ['Low', 'High'],
+    prompt: "<p>Is the pitch high or low?</p>",
+  };
+
+  jsPsych.run([preload, sound_trial]);
+
+</script>
+
+</html>
