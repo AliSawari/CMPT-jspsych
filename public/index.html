@@ -21,45 +21,55 @@
     }
   })
 
-  const welcome_trial_1 = {
+  const preload_trial_1 = {
+    type: jsPsychPreload,
+    audio: ['media/Test1.mp3']
+  }
+
+  const welcome_trial_2 = {
     type: jsPsychHtmlButtonResponse,
     stimulus: '<span style="font-size: 25px;">Welcome. Your participation in this experiment is highly appreciated.</span>',
     choices: ['<span style="font-size: 20px;">Next</span>']
   }
 
-  var name_trial_2 = {
+  var name_trial_3 = {
     type: jsPsychSurveyText,
     questions: [
       { prompt: 'Please enter your full name.' }
     ]
   }
 
-  var age_trial_3 = {
+  var age_trial_4 = {
     type: jsPsychSurveyText,
     questions: [
       { prompt: 'Please enter your age.' }
     ]
   }
 
-  const pre_trial_4 = {
+  const pre_trial_5 = {
     type: jsPsychHtmlButtonResponse,
     stimulus: '<span style="font-size: 25px;">Thank you. In this experiment you will hear a set of sentences each followed by a word on the screen. You are supposed to tap the correct meaning of the ambiguous word in each of the sentences.</span>',
     choices: ['<span style="font-size: 20px;">Start</span>']
   }
-  const preload_trial_5 = {
-    type: jsPsychPreload,
-    audio: ['media/TheVoiceofAli.mp3']
-  }
-
+  
   const sound_trial_6 = {
     type: jsPsychAudioButtonResponse,
-    stimulus: 'media/TheVoiceofAli.mp3',
-    choices: ['a', 'b', 'c'],
-    response_allowed_while_playing: true
+    stimulus: 'media/Test1.mp3',
+    choices: ['show', 'a thing done'],
+    prompt: 'In this sentence, act means:',
+    post_trial_gap: 1000,
+    response_allowed_while_playing: false
   }
 
+  const sound_trial_7 = {
+    type: jsPsychAudioButtonResponse,
+    stimulus: 'media/Test2.mp3',
+    choices: ['show', 'a thing done'],
+    prompt: 'In this sentence, act means:',
+    response_allowed_while_playing: false
+  }
 
-  jsPsych.run([welcome_trial_1, name_trial_2, age_trial_3, pre_trial_4, preload_trial_5, sound_trial_6]);
+  jsPsych.run([preload_trial_1, welcome_trial_2, name_trial_3, age_trial_4, pre_trial_5, sound_trial_6, sound_trial_7]);
 
 </script>
 
