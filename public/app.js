@@ -26,7 +26,7 @@ const jsPsych = initJsPsych({
   }
 })
 
-function check_consent (elem) {
+function check_consent(elem) {
   if (document.getElementById('consent_checkbox').checked) {
     return true;
   }
@@ -66,16 +66,20 @@ const welcome_trial_2b = {
 var name_trial_3 = {
   type: jsPsychSurveyText,
   questions: [
-    { prompt: '<span class="text">Please enter your full name.</span>',
-      required: true }
+    {
+      prompt: '<span class="text">Please enter your full name.</span>',
+      required: true
+    }
   ]
 }
 
 var age_trial_4 = {
   type: jsPsychSurveyText,
   questions: [
-    { prompt: '<span class="text">Please enter your age.</span>',
-      required: true }
+    {
+      prompt: '<span class="text">Please enter your age.</span>',
+      required: true
+    }
   ]
 }
 
