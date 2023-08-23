@@ -24,7 +24,7 @@
 
   const preload_trial_1 = {
     type: jsPsychPreload,
-    audio: ['media/Test0.mp3', 'media/yard1.mp3', 'media/toll2.mp3', 'media/beam3.mp3']
+    audio: ['media/Test0.mp3', 'media/yard1.mp3', 'media/toll2.mp3', 'media/beam3.mp3', 'media/sing4.mp3']
   }
 
   const welcome_trial_2a = {
@@ -92,8 +92,16 @@
     response_allowed_while_playing: false
   }
 
+  const sound_trial_12 = {
+    type: jsPsychAudioButtonResponse,
+    stimulus: 'media/sing4.mp3',
+    choices: ['make musical sounds with the voice', 'make a high-pitched whistling sound'],
+    prompt: 'In this sentence, sing means:',
+    response_allowed_while_playing: false
+  }
+
   jsPsych.run([preload_trial_1, welcome_trial_2a, welcome_trial_2b, name_trial_3, age_trial_4,
-  pre_trial_5, sound_trial_6, sound_trial_9, sound_trial_10, sound_trial_11]);
+  pre_trial_5, sound_trial_6, sound_trial_9, sound_trial_10, sound_trial_11, sound_trial_12]);
 
 </script>
 
