@@ -26,7 +26,7 @@ const jsPsych = initJsPsych({
   }
 })
 
-var check_consent = function (elem) {
+function check_consent (elem) {
   if (document.getElementById('consent_checkbox').checked) {
     return true;
   }
@@ -34,10 +34,9 @@ var check_consent = function (elem) {
     alert("If you wish to participate, you must check the box next to the statement 'I agree to participate in this study.'");
     return false;
   }
-  return false;
 };
 
-var consent_trial = {
+const consent_trial = {
   type: jsPsychExternalHtml,
   url: "consent.html",
   cont_btn: "start",
@@ -67,7 +66,8 @@ const welcome_trial_2b = {
 var name_trial_3 = {
   type: jsPsychSurveyText,
   questions: [
-    { prompt: '<span style="font-size: 25px;">Please enter your full name.</span>' }
+    { prompt: '<span style="font-size: 25px;">Please enter your full name.</span>',
+      required: true }
   ]
 }
 
