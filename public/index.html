@@ -24,12 +24,12 @@
 
   const preload_trial_1 = {
     type: jsPsychPreload,
-    audio: ['media/Test0.mp3']
+    audio: ['media/Test0.mp3', 'media/yard1.mp3']
   }
 
   const welcome_trial_2a = {
     type: jsPsychHtmlKeyboardResponse,
-    stimulus: '<span style="font-size: 25px;">Welccome to this experiment.</span>',
+    stimulus: '<span style="font-size: 25px;">Welcome to this experiment.</span>',
     trial_duration: 3000
   }
 
@@ -65,6 +65,14 @@
     stimulus: 'media/Test0.mp3',
     choices: ['an appointment to meet', 'time of an event'],
     prompt: 'In this sentence, date means:',
+    response_allowed_while_playing: false
+  }
+
+  const sound_trial_9 = {
+    type: jsPsychAudioButtonResponse,
+    stimulus: 'media/yard1.mp3',
+    choices: ['a measure of distance', 'an area of land'],
+    prompt: 'In this sentence, yard means:',
     response_allowed_while_playing: false
   }
 
