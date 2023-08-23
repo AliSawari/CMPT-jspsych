@@ -54,7 +54,7 @@ const preload_trial_1 = {
 
 const welcome_trial_2a = {
   type: jsPsychHtmlKeyboardResponse,
-  stimulus: '<span style="font-size: 25px;">Welcome to this experiment.</span>',
+  stimulus: ['<span class="text">Welcome to this experiment.</span>'],
   trial_duration: 3000
 }
 
