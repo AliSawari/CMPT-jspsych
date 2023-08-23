@@ -180,6 +180,12 @@ const sound_trial_18 = {
 }
 
 
+
+const end_trial = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: ['<span class="text">Thank you very much for your time.</span>'],
+  trial_duration: 6000
+
 const allTrials = [
   consent_trial,
   welcome_trial_2a,
@@ -198,7 +204,8 @@ const allTrials = [
   sound_trial_15,
   sound_trial_16,
   sound_trial_17,
-  sound_trial_18
+  sound_trial_18,
+  end_trial
 ]
 
 jsPsych.run(allTrials);
