@@ -4,6 +4,7 @@
 <head>
   <title>My experiment</title>
   <script src="https://unpkg.com/jspsych@7.3.3"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-external-html@1.1.2"></script>
   <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.2"></script>
   <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.1.2"></script>
   <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.2"></script>
@@ -21,6 +22,25 @@
       console.log(jsPsych.data);
     }
   })
+
+var check_consent = function(elem) {
+    if (document.getElementById('consent_checkbox').checked) {
+        return true;
+    }
+    else {
+        alert("If you wish to participate, you must check the box next to the statement 'I agree to participate in this study.'");
+        return false;
+    }
+    return false;
+};
+
+var consent_trial = {
+    type: jsPsychExternalHtml,
+    url: "consent.html",
+    cont_btn: "start",
+    check_fn: check_consent
+};
+
 
   const preload_trial_1 = {
     type: jsPsychPreload,
@@ -150,7 +170,7 @@
     response_allowed_while_playing: false
   }
 
-  jsPsych.run([preload_trial_1, welcome_trial_2a, welcome_trial_2b, name_trial_3, age_trial_4,
+  jsPsych.run([consent_trial, welcome_trial_2a, welcome_trial_2b, name_trial_3, age_trial_4,
   pre_trial_5, sound_trial_6, sound_trial_9, sound_trial_10, sound_trial_11, sound_trial_12, sound_trial_13,
 sound_trial_14, sound_trial_15, sound_trial_16, sound_trial_17, sound_trial_18]);
 
