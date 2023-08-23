@@ -89,8 +89,8 @@ const pre_trial_5 = {
 const sound_trial_6 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/Test0.mp3',
-  choices: ['<span class= "text20">an appointment to meet</span>', '<span class= "text20">time of an event</span>'],
-  prompt: 'In this sentence, date means:',
+  choices: ['<span class= "text30">an appointment to meet</span>', '<span class= "text30">time of an event</span>'],
+  prompt: '<span class= "text30">In this sentence, date means:</span>',
   response_allowed_while_playing: false
 }
 
