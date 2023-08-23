@@ -185,6 +185,7 @@ const end_trial = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus: ['<span class="text">Thank you very much for your time.</span>'],
   trial_duration: 6000
+}
 
 const allTrials = [
   consent_trial,
