@@ -102,80 +102,80 @@ const test_trial_7 = {
 const sound_trial_9 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/yard1.mp3',
-  choices: ['a measure of distance', 'an area of land'],
-  prompt: 'In this sentence, yard means:',
+  choices: ['<span class= "text30">a measure of distance</span>', '<span class= "text30">an area of land</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, yard means:</span>',
   response_allowed_while_playing: false
 }
 
 const sound_trial_10 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/toll2.mp3',
-  choices: ['a tax or fee', 'a grievous price'],
-  prompt: 'In this sentence, toll means:',
+  choices: ['<span class= "text30">a tax or fee</span>', '<span class= "text30">a grievous price</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, toll means:</span>',
   response_allowed_while_playing: false
 }
 
 const sound_trial_11 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/beam3.mp3',
-  choices: ['a piece of metal to support the roof', 'a ray or shaft of light'],
-  prompt: 'In this sentence, beam means:',
+  choices: ['<span class= "text30">a piece of metal to support the roof</span>', '<span class= "text30">a ray or shaft of light</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, beam means:</span>',
   response_allowed_while_playing: false
 }
 
 const sound_trial_12 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/sing4.mp3',
-  choices: ['make musical sounds with the voice', 'make a high-pitched whistling sound'],
-  prompt: 'In this sentence, sing means:',
+  choices: ['<span class= "text30">make musical sounds with the voice</span>', '<span class= "text30">make a high-pitched whistling sound</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, sing means:</span>',
   response_allowed_while_playing: false
 }
 
 const sound_trial_13 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/cell5.mp3',
-  choices: ['the smallest functional unit of an organism', 'a small room to keep a prisoner'],
-  prompt: 'In this sentence, cell means:',
+  choices: ['<span class= "text30">the smallest functional unit of an organism</span>', '<span class= "text30">a small room to keep a prisoner</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, cell means:</span>',
   response_allowed_while_playing: false
 }
 
 const sound_trial_14 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/lock6.mp3',
-  choices: ['a fastening for a door', 'a curl of the hair'],
-  prompt: 'In this sentence, lock means:',
+  choices: ['<span class= "text30">a fastening for a door</span>', '<span class= "text30">a curl of the hair</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, lock means:</span>',
   response_allowed_while_playing: false
 }
 
 const sound_trial_15 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/cast7.mp3',
-  choices: ['cause to appear on a surface', 'cause to move by throwing'],
-  prompt: 'In this sentence, cast means:',
+  choices: ['<span class= "text30">cause to appear on a surface</span>', '<span class= "text30">cause to move by throwing</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, cast means:</span>',
   response_allowed_while_playing: false
 }
 
 const sound_trial_16 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/draw8.mp3',
-  choices: ['to produce a representation of something', 'to cause to come out of a container or source'],
-  prompt: 'In this sentence, draw means:',
+  choices: ['<span class= "text30">to produce a representation of something</span>', '<span class= "text30">to cause to come out of a container or source</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, draw means:</span>',
   response_allowed_while_playing: false
 }
 
 const sound_trial_17 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/cold9.mp3',
-  choices: ['an uncomfortably low temperature', 'an infection caused by virus'],
-  prompt: 'In this sentence, cold means:',
+  choices: ['<span class= "text30">an uncomfortably low temperature</span>', '<span class= "text30">an infection caused by virus</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, cold means:</span>',
   response_allowed_while_playing: false
 }
 
 const sound_trial_18 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/bank10.mp3',
-  choices: ['the edge of a river', 'a financial institution'],
-  prompt: 'In this sentence, bank means:',
+  choices: ['<span class= "text30">the edge of a river</span>', '<span class= "text30">a financial institution</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, bank means:</span>',
   response_allowed_while_playing: false
 }
 
