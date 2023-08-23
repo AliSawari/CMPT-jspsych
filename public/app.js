@@ -59,14 +59,14 @@ const welcome_trial_2a = {
 
 const welcome_trial_2b = {
   type: jsPsychHtmlKeyboardResponse,
-  stimulus: '<span style="font-size: 25px;">Your participation in this task is highly appreciated.</span>',
+  stimulus: '<span class="text">Your participation in this task is highly appreciated.</span>',
   trial_duration: 4000
 }
 
 var name_trial_3 = {
   type: jsPsychSurveyText,
   questions: [
-    { prompt: '<span style="font-size: 25px;">Please enter your full name.</span>',
+    { prompt: '<span class="text">Please enter your full name.</span>',
       required: true }
   ]
 }
@@ -74,14 +74,15 @@ var name_trial_3 = {
 var age_trial_4 = {
   type: jsPsychSurveyText,
   questions: [
-    { prompt: '<span style="font-size: 25px;">Please enter your age.</span>' }
+    { prompt: '<span class="text">Please enter your age.</span>',
+      required: true }
   ]
 }
 
 const pre_trial_5 = {
   type: jsPsychHtmlButtonResponse,
-  stimulus: '<span style="font-size: 25px;">Thank you. In this experiment you will hear a set of ambiguous sentences. You are supposed to tap the correct meaning of the ambiguous word in each of the sentences.</span>',
-  choices: ['<span style="font-size: 20px;">Start</span>']
+  stimulus: '<span class="text">Thank you. In this experiment you will hear a set of ambiguous sentences. You are supposed to tap the correct meaning of the ambiguous word in each of the sentences.</span>',
+  choices: ['<span class="text">Start</span>']
 }
 
 
