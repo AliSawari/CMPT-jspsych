@@ -81,7 +81,7 @@ var age_trial_4 = {
 
 const pre_trial_5 = {
   type: jsPsychHtmlButtonResponse,
-  stimulus: '<span class="text25">Thank you. In this experiment you will hear 20 sentences each containing an ambiguous word. Then you will be asked to distinguish between the two meanings of that word which will be presented to you on the screen and tap the one that best suits the context of the sentence. You are supposed to undergo this task in a quiet setting with no distractions and hence full concentration.</span><span class= "text25_and_enter">Please turn up the volume of your device for better perception of the auditory stimulus.</span><span class= "text25_and_enter">Tap "Next" for a test trial.</span>',
+  stimulus: '<span class="text25">Thank you. In this experiment you will hear 20 sentences each containing an ambiguous word. Then you will be asked to distinguish between the two meanings of that word which will be presented to you on the screen and tap the one that best suits the context of the sentence as fast as possible. You are supposed to undergo this task in a quiet setting with no distractions and hence full concentration.</span><span class= "text25_and_enter">Please turn up the volume of your device for better perception of the auditory stimulus.</span><span class= "text25_and_enter">Tap "Next" for a test trial.</span>',
   choices: ['<span class="text">Start</span>']
 }
 
