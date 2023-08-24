@@ -18,11 +18,10 @@ async function sendData(data) {
 
 const jsPsych = initJsPsych({
   on_finish: function () {
-    console.log(jsPsych.data.allData, jsPsych.data.interactionData);
-    sendData({
-      allData: jsPsych.data.allData,
-      interactionData: jsPsych.data.interactionData
-    });
+    console.log(jsPsych.data.allData);
+    if(jsPsych.data.allData.trials && jsPsych.data.allData.trials.length){
+      sendData(jsPsych.data.allData.trials);
+    } else console.error('trial data is missing!');
   }
 })
 

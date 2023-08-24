@@ -2,30 +2,78 @@ const express = require("express")
 const app = express();
 const path = require('path');
 const fs = require('fs/promises');
+const { existsSync } = require("fs");
 
-function getCompletePath(dirName){
-  return path.join(__dirname, dirName);
+function getCleanPath(...args){
+  return path.join(__dirname, ...args);
 }
 
-app.use(express.static(getCompletePath('public')))
+app.use(express.static(getCleanPath('public')))
 app.use(express.json())
 
 
 async function writeToFile(data){
   const randomFileID = (Math.random() * 100000).toString(16).replace('.', '');
-  const finalPath = path.join(getCompletePath('results'), `result-${randomFileID}.json`);
+  const finalPath = getCleanPath('results', `result-${randomFileID}.json`);
   return await fs.writeFile(finalPath, JSON.stringify(data, undefined, 2));
 }
 
+// const csvWriter = createObjectCsvWriter({
+//   path: getCleanPath('results', 'finalResults.csv'),
+//   header: [
+//     { id: "rt", title: "rt" },
+//     { id: "stimulus", title: "stimulus" },
+//     { id: "response", title: "response" },
+//     { id: "trial_type", title: "trial_type" },
+//     { id: "trial_index", title: "trial_index" },
+//     { id: "time_elapsed", title: "time_elapsed" },
+//     { id: "internal_node_id", title: "internal_node_id" }
+//   ]
+// });
+
 app.post('/results', async (req, res) => {
-  if(req.body && Object.keys(req.body).length){
-    await writeToFile(req.body);
-    res.json({
-      message: "success"
-    })
-  }
+  if (req.body && Object.keys(req.body).length) {
+    try {
+      await writeToFile(req.body);
+      await writeResultsToFile()
+      res.json({
+        message: "success"
+      })
+    } catch (e) {
+      console.log(e)
+      res.json({
+        message: "ERROR! please check server output"
+      })
+    }
+  } else res.json({ message: "No data has been received from client!" });
 })
 
+
+async function combineAllData(){
+  let resultsDir = getCleanPath('results');
+  const files = await fs.readdir(resultsDir);
+  let allTrials = [];
+  for(let f of files){
+    const f_path = getCleanPath('results', f);
+    const f_content = await fs.readFile(f_path);
+    const json = JSON.parse(f_content);
+    allTrials.push(json);
+  }
+  return allTrials;
+}
+
+async function writeResultsToFile(){
+  const finalPath = getCleanPath('results', 'finalResults.json');
+  if(existsSync(finalPath)) await fs.unlink(finalPath);
+  const allTrials = await combineAllData();
+  return await fs.writeFile(finalPath, JSON.stringify(allTrials, null, 2));
+}
+
+
+
+app.get('/generateResponse', async (req, res) => {
+  return res.download(getCleanPath('results', 'finalResults.json'), 'finalResults.json');
+})
 
 const port = process.env.PORT || 3000
 
