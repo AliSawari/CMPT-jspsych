@@ -14,12 +14,10 @@ async function sendData(data) {
   }
 }
 
-
-
 const jsPsych = initJsPsych({
   on_finish: function () {
     console.log(jsPsych.data.allData);
-    if(jsPsych.data.allData.trials && jsPsych.data.allData.trials.length){
+    if (jsPsych.data.allData.trials && jsPsych.data.allData.trials.length) {
       sendData(jsPsych.data.allData.trials);
     } else console.error('trial data is missing!');
   }
@@ -41,7 +39,6 @@ const consent_trial = {
   cont_btn: "start",
   check_fn: check_consent
 };
-
 
 const preload_trial_1 = {
   type: jsPsychPreload,
@@ -194,76 +191,76 @@ const sound_trial_19 = {
 }
 
 const sound_trial_20 = {
-    type: jsPsychAudioButtonResponse,
-    stimulus: 'media/rock12.mp3',
-    choices: ['<span class= "text30">a piece of stone</span>', '<span class= "text30">a music genre</span>'],
-    prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, rock means:</span>',
-    response_allowed_while_playing: false
-  }
+  type: jsPsychAudioButtonResponse,
+  stimulus: 'media/rock12.mp3',
+  choices: ['<span class= "text30">a piece of stone</span>', '<span class= "text30">a music genre</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, rock means:</span>',
+  response_allowed_while_playing: false
+}
 
-  const sound_trial_21 = {
-    type: jsPsychAudioButtonResponse,
-    stimulus: 'media/pick13.mp3',
-    choices: ['<span class= "text30">removing obstructions from nostrils</span>', '<span class= "text30">to take some things and leave others</span>'],
-    prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, pick means:</span>',
-    response_allowed_while_playing: false
-  }
+const sound_trial_21 = {
+  type: jsPsychAudioButtonResponse,
+  stimulus: 'media/pick13.mp3',
+  choices: ['<span class= "text30">removing obstructions from nostrils</span>', '<span class= "text30">to take some things and leave others</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, pick means:</span>',
+  response_allowed_while_playing: false
+}
 
-  const sound_trial_22 = {
-    type: jsPsychAudioButtonResponse,
-    stimulus: 'media/stay14.mp3',
-    choices: ['<span class= "text30">to live in a place for a short time as a visitor</span>', '<span class= "text30">to continue to be in a particular state</span>'],
-    prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, stay means:</span>',
-    response_allowed_while_playing: false
-  }
+const sound_trial_22 = {
+  type: jsPsychAudioButtonResponse,
+  stimulus: 'media/stay14.mp3',
+  choices: ['<span class= "text30">to live in a place for a short time as a visitor</span>', '<span class= "text30">to continue to be in a particular state</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, stay means:</span>',
+  response_allowed_while_playing: false
+}
 
-  const sound_trial_23 = {
-    type: jsPsychAudioButtonResponse,
-    stimulus: 'media/band15.mp3',
-    choices: ['<span class= "text30">a group of musicians who play together</span>', '<span class= "text30">a thin and flat piece of material to put around something</span>'],
-    prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, band means:</span>',
-    response_allowed_while_playing: false
-  }
+const sound_trial_23 = {
+  type: jsPsychAudioButtonResponse,
+  stimulus: 'media/band15.mp3',
+  choices: ['<span class= "text30">a group of musicians who play together</span>', '<span class= "text30">a thin and flat piece of material to put around something</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, band means:</span>',
+  response_allowed_while_playing: false
+}
 
-  const sound_trial_24 = {
-    type: jsPsychAudioButtonResponse,
-    stimulus: 'media/term16.mp3',
-    choices: ['<span class= "text30">a period of time at school or college</span>', '<span class= "text30">a word or expression</span>'],
-    prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, term means:</span>',
-    response_allowed_while_playing: false
-  }
+const sound_trial_24 = {
+  type: jsPsychAudioButtonResponse,
+  stimulus: 'media/term16.mp3',
+  choices: ['<span class= "text30">a period of time at school or college</span>', '<span class= "text30">a word or expression</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, term means:</span>',
+  response_allowed_while_playing: false
+}
 
-  const sound_trial_25 = {
-    type: jsPsychAudioButtonResponse,
-    stimulus: 'media/tape17.mp3',
-    choices: ['<span class= "text30">magnetic strip to record media on</span>', '<span class= "text30">a sticky strip of material</span>'],
-    prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, tape means:</span>',
-    response_allowed_while_playing: false
-  }
+const sound_trial_25 = {
+  type: jsPsychAudioButtonResponse,
+  stimulus: 'media/tape17.mp3',
+  choices: ['<span class= "text30">magnetic strip to record media on</span>', '<span class= "text30">a sticky strip of material</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, tape means:</span>',
+  response_allowed_while_playing: false
+}
 
-  const sound_trial_26 = {
-    type: jsPsychAudioButtonResponse,
-    stimulus: 'media/port18.mp3',
-    choices: ['<span class= "text30">a town by the sea that has a harbor</span>', '<span class= "text30">a strong, sweet wine made in Portugal</span>'],
-    prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, port means:</span>',
-    response_allowed_while_playing: false
-  }
+const sound_trial_26 = {
+  type: jsPsychAudioButtonResponse,
+  stimulus: 'media/port18.mp3',
+  choices: ['<span class= "text30">a town by the sea that has a harbor</span>', '<span class= "text30">a strong, sweet wine made in Portugal</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, port means:</span>',
+  response_allowed_while_playing: false
+}
 
-  const sound_trial_27 = {
-    type: jsPsychAudioButtonResponse,
-    stimulus: 'media/case19.mp3',
-    choices: ['<span class= "text30">a series of events being dealt by the police</span>', '<span class= "text30">a container or box for storing something in</span>'],
-    prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, case means:</span>',
-    response_allowed_while_playing: false
-  }
+const sound_trial_27 = {
+  type: jsPsychAudioButtonResponse,
+  stimulus: 'media/case19.mp3',
+  choices: ['<span class= "text30">a series of events being dealt by the police</span>', '<span class= "text30">a container or box for storing something in</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, case means:</span>',
+  response_allowed_while_playing: false
+}
 
-  const sound_trial_28 = {
-    type: jsPsychAudioButtonResponse,
-    stimulus: 'media/clip20.mp3',
-    choices: ['<span class= "text30">a short part of a film or television programme</span>', '<span class= "text30">a small object for holding things in position</span>'],
-    prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, clip means:</span>',
-    response_allowed_while_playing: false
-  }
+const sound_trial_28 = {
+  type: jsPsychAudioButtonResponse,
+  stimulus: 'media/clip20.mp3',
+  choices: ['<span class= "text30">a short part of a film or television programme</span>', '<span class= "text30">a small object for holding things in position</span>'],
+  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, clip means:</span>',
+  response_allowed_while_playing: false
+}
 
 
 const end_trial = {
