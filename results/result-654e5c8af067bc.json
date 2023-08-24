@@ -1,0 +1,178 @@
+[
+  {
+    "rt": 2222,
+    "url": "consent.html",
+    "trial_type": "external-html",
+    "trial_index": 0,
+    "time_elapsed": 2235,
+    "internal_node_id": "0.0-0.0"
+  },
+  {
+    "rt": null,
+    "stimulus": [
+      "<span class=\"text\">Welcome to this experiment.</span>"
+    ],
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 1,
+    "time_elapsed": 5241,
+    "internal_node_id": "0.0-1.0"
+  },
+  {
+    "rt": 1724,
+    "stimulus": "<span class=\"text\">Your participation in this task is highly appreciated.</span>",
+    "response": "k",
+    "trial_type": "html-keyboard-response",
+    "trial_index": 2,
+    "time_elapsed": 6965,
+    "internal_node_id": "0.0-2.0"
+  },
+  {
+    "rt": 4089,
+    "response": {
+      "Q0": "John"
+    },
+    "trial_type": "survey-text",
+    "trial_index": 3,
+    "time_elapsed": 11059,
+    "internal_node_id": "0.0-3.0"
+  },
+  {
+    "rt": 1533,
+    "response": {
+      "Q0": "32"
+    },
+    "trial_type": "survey-text",
+    "trial_index": 4,
+    "time_elapsed": 12595,
+    "internal_node_id": "0.0-4.0"
+  },
+  {
+    "rt": 575,
+    "stimulus": "<span class=\"text25\">Thank you. In this experiment you will hear 20 sentences each containing an ambiguous word. Then you will be asked to distinguish between the two meanings of that word which will be presented to you on the screen and tap the one that best suits the context of the sentence as fast as possible. You are supposed to undergo this task in a quiet setting with no distractions and hence full concentration.</span><span class= \"text25_and_enter\">Please turn up the volume of your device for better perception of the auditory stimulus.</span><span class= \"text25_and_enter\">Tap \"Next\" for a test trial.</span>",
+    "response": 0,
+    "trial_type": "html-button-response",
+    "trial_index": 5,
+    "time_elapsed": 13171,
+    "internal_node_id": "0.0-5.0"
+  },
+  {
+    "rt": 2512,
+    "stimulus": "media/Test0.mp3",
+    "response": 1,
+    "trial_type": "audio-button-response",
+    "trial_index": 6,
+    "time_elapsed": 15699,
+    "internal_node_id": "0.0-6.0"
+  },
+  {
+    "rt": 1063,
+    "stimulus": "<span class=\"text25\">Well done. Please tap \"Start\" to begin the main experiment.</span>",
+    "response": 0,
+    "trial_type": "html-button-response",
+    "trial_index": 7,
+    "time_elapsed": 16763,
+    "internal_node_id": "0.0-7.0"
+  },
+  {
+    "rt": 3429,
+    "stimulus": "media/yard1.mp3",
+    "response": 0,
+    "trial_type": "audio-button-response",
+    "trial_index": 8,
+    "time_elapsed": 20203,
+    "internal_node_id": "0.0-8.0"
+  },
+  {
+    "rt": 2739,
+    "stimulus": "media/toll2.mp3",
+    "response": 1,
+    "trial_type": "audio-button-response",
+    "trial_index": 9,
+    "time_elapsed": 22947,
+    "internal_node_id": "0.0-9.0"
+  },
+  {
+    "rt": 2509,
+    "stimulus": "media/beam3.mp3",
+    "response": 0,
+    "trial_type": "audio-button-response",
+    "trial_index": 10,
+    "time_elapsed": 25467,
+    "internal_node_id": "0.0-10.0"
+  },
+  {
+    "rt": 3200,
+    "stimulus": "media/sing4.mp3",
+    "response": 0,
+    "trial_type": "audio-button-response",
+    "trial_index": 11,
+    "time_elapsed": 28683,
+    "internal_node_id": "0.0-11.0"
+  },
+  {
+    "rt": 3560,
+    "stimulus": "media/cell5.mp3",
+    "response": 1,
+    "trial_type": "audio-button-response",
+    "trial_index": 12,
+    "time_elapsed": 32260,
+    "internal_node_id": "0.0-12.0"
+  },
+  {
+    "rt": 258531,
+    "stimulus": "media/lock6.mp3",
+    "response": 0,
+    "trial_type": "audio-button-response",
+    "trial_index": 13,
+    "time_elapsed": 290812,
+    "internal_node_id": "0.0-13.0"
+  },
+  {
+    "rt": 3411,
+    "stimulus": "media/cast7.mp3",
+    "response": 1,
+    "trial_type": "audio-button-response",
+    "trial_index": 14,
+    "time_elapsed": 294235,
+    "internal_node_id": "0.0-14.0"
+  },
+  {
+    "rt": 2800,
+    "stimulus": "media/draw8.mp3",
+    "response": 0,
+    "trial_type": "audio-button-response",
+    "trial_index": 15,
+    "time_elapsed": 297043,
+    "internal_node_id": "0.0-15.0"
+  },
+  {
+    "rt": 2469,
+    "stimulus": "media/cold9.mp3",
+    "response": 1,
+    "trial_type": "audio-button-response",
+    "trial_index": 16,
+    "time_elapsed": 299524,
+    "internal_node_id": "0.0-16.0"
+  },
+  {
+    "rt": 2640,
+    "stimulus": "media/bank10.mp3",
+    "response": 0,
+    "trial_type": "audio-button-response",
+    "trial_index": 17,
+    "time_elapsed": 302171,
+    "internal_node_id": "0.0-17.0"
+  },
+  {
+    "rt": null,
+    "stimulus": [
+      "<span class=\"text\">Thank you very much for your time.</span>"
+    ],
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 18,
+    "time_elapsed": 308185,
+    "internal_node_id": "0.0-18.0"
+  }
+]
