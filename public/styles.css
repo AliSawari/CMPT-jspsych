@@ -5,9 +5,15 @@
   display: block;
 }
 
-.textnorm {
-  font-size: 1em;
-  line-height: 1em;
+.textconsent {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 1em;
+}
+
+.textconsent_block {
+  font-size: 1.5em;
+  line-height: 1.5em;
   margin: 1em;
   display: block;
 }
