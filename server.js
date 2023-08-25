@@ -54,6 +54,7 @@ async function combineAllData(){
   const files = await fs.readdir(resultsDir);
   let allTrials = [];
   for(let f of files){
+    if(f.split('.').pop() !== 'json') continue;
     const f_path = getCleanPath('results', f);
     const f_content = await fs.readFile(f_path);
     const json = JSON.parse(f_content);
