@@ -57,7 +57,7 @@ const welcome_trial_2a = {
 const welcome_trial_2b = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus: '<span class="text">Your participation in this task is highly appreciated.</span><span class="text">Please make sure that you have a strong internet connection</span>',
-  trial_duration: 7000
+  trial_duration: 8000
 }
 
 var name_trial_3 = {
@@ -67,7 +67,8 @@ var name_trial_3 = {
       prompt: '<span class="text">Please enter your full name.</span>',
       required: true
     }
-  ]
+  ],
+  button_label: 'Next'
 }
 
 var age_trial_4 = {
