@@ -56,7 +56,7 @@ const welcome_trial_2a = {
 
 const welcome_trial_2b = {
   type: jsPsychHtmlKeyboardResponse,
-  stimulus: '<span class="text">Your participation in this task is highly appreciated.</span><span class="text">Please make sure that you have a strong internet connection</span>',
+  stimulus: '<span class="text">Your participation in this task is highly appreciated.</span><span class="text">Please make sure that you have a strong internet connection.</span>',
   trial_duration: 8000
 }
 
