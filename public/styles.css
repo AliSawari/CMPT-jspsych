@@ -38,6 +38,13 @@
     border-color: #ccc;
 }
 
+.textnorm {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1em;
+  display: block;
+}
+
 .text2 {
   font-size: 2em;
   }

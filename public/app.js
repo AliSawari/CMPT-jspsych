@@ -66,25 +66,19 @@ var name_trial_3 = {
     {
       prompt: '<span class="text">Please enter your full name.</span>',
       required: true
+    },
+    {
+      prompt: '<span class="text">Please enter your age.</span>',
+      required: true
     }
   ],
   button_label: 'Next'
 }
 
-var age_trial_4 = {
-  type: jsPsychSurveyText,
-  questions: [
-    {
-      prompt: '<span class="text">Please enter your age.</span>',
-      required: true
-    }
-  ]
-}
-
 const pre_trial_5 = {
   type: jsPsychHtmlButtonResponse,
-  stimulus: '<span class="text25">Thank you. In this experiment you will hear 20 sentences each containing an ambiguous word. Then you will be asked to distinguish between the two meanings of that word which will be presented to you on the screen and tap the one that best suits the context of the sentence as fast as possible. You are supposed to undergo this task in a quiet setting with no distractions and hence full concentration.</span><span class= "text25_and_enter">Please turn up the volume of your device for better perception of the auditory stimulus.</span><span class= "text25_and_enter">Tap "Next" for a test trial.</span>',
-  choices: ['<span class="text25">Next</span>']
+  stimulus: '<span class="textnorm">Thank you. In this experiment you will hear 20 sentences each containing an ambiguous word. Then you will be asked to distinguish between the two meanings of that word which will be presented to you on the screen and tap the one that best suits the context of the sentence as fast as possible. You are supposed to undergo this task in a quiet setting with no distractions and hence full concentration.</span><span class= "textnorm">Please turn up the volume of your device for better perception of the auditory stimulus.</span><span class= "textnorm">Tap "Next" for a test trial.</span>',
+  choices: ['<span class="textnorm">Next</span>']
 }
 
 const sound_trial_6 = {
@@ -275,7 +269,6 @@ const allTrials = [
   welcome_trial_2a,
   welcome_trial_2b,
   name_trial_3,
-  age_trial_4,
   pre_trial_5,
   sound_trial_6,
   test_trial_7,
