@@ -91,15 +91,15 @@ const sound_trial_6 = {
 
 const test_trial_7 = {
   type: jsPsychHtmlButtonResponse,
-  stimulus: '<span class="text25">Well done. Please tap "Start" to begin the main experiment.</span>',
-  choices: ['<span class="text25">Start</span>']
+  stimulus: '<span class="textnorm">Well done. Please tap "Start" to begin the main experiment.</span>',
+  choices: ['<span class="textnorm">Start</span>']
 }
 
 const sound_trial_9 = {
   type: jsPsychAudioButtonResponse,
   stimulus: 'media/yard1.mp3',
-  choices: ['<span class= "text30">a measure of distance</span>', '<span class= "text30">an area of land</span>'],
-  prompt: '<span class= "text31"> </span><span class= "text30">In this sentence, yard means:</span>',
+  choices: ['<span class= "textnorm">a measure of distance</span>', '<span class= "textnorm">an area of land</span>'],
+  prompt: '<span class= "textnorm"> </span><span class= "textnorm">In this sentence, yard means:</span>',
   response_allowed_while_playing: false
 }
 
