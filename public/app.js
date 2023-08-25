@@ -64,11 +64,11 @@ var name_trial_3 = {
   type: jsPsychSurveyText,
   questions: [
     {
-      prompt: '<span class="text">Please enter your full name.</span>',
+      prompt: '<span class="textnorm">Please enter your full name.</span>',
       required: true
     },
     {
-      prompt: '<span class="text">Please enter your age.</span>',
+      prompt: '<span class="textnorm">Please enter your age.</span>',
       required: true
     }
   ],
