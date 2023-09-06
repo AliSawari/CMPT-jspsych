@@ -18,18 +18,6 @@ async function writeToFile(data){
   return await fs.writeFile(finalPath, JSON.stringify(data, undefined, 2));
 }
 
-// const csvWriter = createObjectCsvWriter({
-//   path: getCleanPath('results', 'finalResults.csv'),
-//   header: [
-//     { id: "rt", title: "rt" },
-//     { id: "stimulus", title: "stimulus" },
-//     { id: "response", title: "response" },
-//     { id: "trial_type", title: "trial_type" },
-//     { id: "trial_index", title: "trial_index" },
-//     { id: "time_elapsed", title: "time_elapsed" },
-//     { id: "internal_node_id", title: "internal_node_id" }
-//   ]
-// });
 
 app.post('/results', async (req, res) => {
   if (req.body && Object.keys(req.body).length) {
